@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Oct 20 16:02:18 2021
+# Process ID: 100464
+# Current directory: /home2/shivang/github/vivado_ex/build/project_1/project_1.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home2/shivang/github/vivado_ex/build/project_1/project_1.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home2/shivang/github/vivado_ex/build/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
