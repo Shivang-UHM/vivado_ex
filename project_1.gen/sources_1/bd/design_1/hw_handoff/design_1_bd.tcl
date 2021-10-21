@@ -159,11 +159,6 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set LED [ create_bd_port -dir O -from 3 -to 0 LED ]
-  set reset [ create_bd_port -dir I -type rst reset ]
-  set_property -dict [ list \
-   CONFIG.POLARITY {ACTIVE_HIGH} \
- ] $reset
-  set sys_clk [ create_bd_port -dir I -type clk -freq_hz 100000000 sys_clk ]
 
   # Create instance: c_counter_binary_0, and set properties
   set c_counter_binary_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0 ]
@@ -171,9 +166,6 @@ proc create_root_design { parentCell } {
    CONFIG.CE {true} \
    CONFIG.Output_Width {32} \
  ] $c_counter_binary_0
-
-  # Create instance: clk_wiz, and set properties
-  set clk_wiz [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz ]
 
   # Create instance: ila_0, and set properties
   set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
@@ -183,6 +175,9 @@ proc create_root_design { parentCell } {
    CONFIG.C_NUM_OF_PROBES {1} \
    CONFIG.C_PROBE0_WIDTH {32} \
  ] $ila_0
+
+  # Create instance: sim_clk_gen_0, and set properties
+  set sim_clk_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:sim_clk_gen:1.0 sim_clk_gen_0 ]
 
   # Create instance: vio_0, and set properties
   set vio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 ]
@@ -196,10 +191,8 @@ proc create_root_design { parentCell } {
  ] $xlslice_0
 
   # Create port connections
-  connect_bd_net -net Net [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins ila_0/clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net Net [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins ila_0/clk] [get_bd_pins sim_clk_gen_0/clk] [get_bd_pins vio_0/clk]
   connect_bd_net -net c_counter_binary_0_Q [get_bd_pins c_counter_binary_0/Q] [get_bd_pins ila_0/probe0] [get_bd_pins vio_0/probe_in0] [get_bd_pins xlslice_0/Din]
-  connect_bd_net -net clk_100MHz_1 [get_bd_ports sys_clk] [get_bd_pins clk_wiz/clk_in1]
-  connect_bd_net -net reset_rtl_1 [get_bd_ports reset] [get_bd_pins clk_wiz/reset]
   connect_bd_net -net vio_0_probe_out0 [get_bd_pins c_counter_binary_0/CE] [get_bd_pins vio_0/probe_out0]
   connect_bd_net -net xlslice_0_Dout [get_bd_ports LED] [get_bd_pins xlslice_0/Dout]
 

@@ -2,12 +2,12 @@
 2020.2
 Nov 18 2020
 09:20:35
-/home2/shivang/github/vivado_ex/build/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1634778995,vhdl,/home2/shivang/github/vivado_ex/build/project_1/project_1.srcs/sim_1/new/tb1.vhd,,,design_1_wrapper,,,,,,,,
+/home2/shivang/github/vivado_ex/build/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd,1634847889,vhdl,/home2/shivang/github/vivado_ex/build/project_1/project_1.srcs/sim_1/new/tb1.vhd,,,design_1_wrapper,,,,,,,,
 /home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_c_counter_binary_0_0/sim/design_1_c_counter_binary_0_0.vhd,1634778995,vhdl,,,,design_1_c_counter_binary_0_0,,,,,,,,
-/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_sim_netlist.vhdl,1634779106,vhdl,,,,design_1_clk_wiz_0;design_1_clk_wiz_0_design_1_clk_wiz_0_clk_wiz,,,,,,,,
 /home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.vhd,1634778996,vhdl,,,,design_1_ila_0_0,,,,,,,,
+/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_sim_clk_gen_0_0/sim/design_1_sim_clk_gen_0_0.v,1634847889,verilog,,,,design_1_sim_clk_gen_0_0,,,,,,,,
 /home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.vhd,1634778997,vhdl,,,,design_1_vio_0_0,,,,,,,,
-/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v,1634778998,verilog,,,,design_1_xlslice_0_0,,,../../../../project_1.gen/sources_1/bd/design_1/ipshared/d0f7,,,,,
-/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.vhd,1634778994,vhdl,,,,design_1,,,,,,,,
+/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v,1634778998,verilog,,/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/ip/design_1_sim_clk_gen_0_0/sim/design_1_sim_clk_gen_0_0.v,,design_1_xlslice_0_0,,,,,,,,
+/home2/shivang/github/vivado_ex/build/project_1/project_1.ip_user_files/bd/design_1/sim/design_1.vhd,1634847888,vhdl,,,,design_1,,,,,,,,
 /home2/shivang/github/vivado_ex/build/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
 /home2/shivang/github/vivado_ex/build/project_1/project_1.srcs/sim_1/new/tb1.vhd,1634847140,vhdl,,,,tb1,,,,,,,,

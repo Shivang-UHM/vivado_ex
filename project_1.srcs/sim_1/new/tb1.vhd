@@ -39,8 +39,8 @@ end tb1;
 architecture Behavioral of tb1 is
 component design_1_wrapper is
   port (
-    sys_clk : in STD_LOGIC;
-    reset : in STD_LOGIC;
+    --sys_clk : in STD_LOGIC;
+    --reset : in STD_LOGIC;
     LED : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1_wrapper;
@@ -52,17 +52,17 @@ constant CLK_period : time := 10 ns;
 
 begin
  uut: entity work.design_1_wrapper PORT map (
-  sys_clk => clk_i,
-  reset => rst,
+  --sys_clk => clk_i,
+  --reset => rst,
   LED => out_led
   );
   
   clk_process: process
   begin
-    clk_i <= '0';
-    wait for CLK_period/2;
-    clk_i <= '1';
-    wait for CLK_period/2;
+    --clk_i <= '0';
+    --wait for CLK_period/2;
+    --clk_i <= '1';
+    --wait for CLK_period/2;
   end process;
   
   stim_process: process
